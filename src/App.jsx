@@ -267,7 +267,7 @@ const ChristusMuguerzaLanding = () => {
                 </div>
               </div>
               <p className="footer-copyright">
-                Copyright © 2024 CHRISTUS MUGUERZA - Todos los derechos reservados
+                 CHRISTUS MUGUERZA - Todos los derechos reservados
               </p>
             </div>
           </div>
