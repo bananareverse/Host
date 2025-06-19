@@ -665,4 +665,15 @@
 .footer-copyright {
   color: #9ca3af;
   margin-bottom: 1rem;
+}
+
+.sn-va-widget {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
 } 

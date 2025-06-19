@@ -267,12 +267,23 @@ const ChristusMuguerzaLanding = () => {
                 </div>
               </div>
               <p className="footer-copyright">
-                 CHRISTUS MUGUERZA - Todos los derechos reservados
+                CHRISTUS MUGUERZA - Todos los derechos reservados
               </p>
             </div>
           </div>
         </div>
       </footer>
+      <iframe
+        id="sn_va_web_client"
+        title="ServiceNow Virtual Agent Client"
+        width="400"
+        height="600"
+        src="https://informationtechnologymatterssadecvdemo3.service-now.com/sn_va_web_client_app_embed.do"
+        frameBorder="0"
+        className="sn-va-widget"
+      >
+        Tu navegador no soporta iframes.
+      </iframe>
     </div>
   );
 };
