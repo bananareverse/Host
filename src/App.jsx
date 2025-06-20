@@ -268,7 +268,7 @@ const ChristusMuguerzaLanding = () => {
                 </div>
               </div>
               <p className="footer-copyright">
-                CHRISTUS MUGUERZA - Todos los derechos reservados
+                CHRISTUS MUGUERZA
               </p>
             </div>
           </div>
