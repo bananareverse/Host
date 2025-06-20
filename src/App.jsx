@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Heart, Users, Shield, Award, Phone, Mail, MapPin, Menu, X, Activity, Clock } from 'lucide-react';
+import { Heart, Users, Shield, Award, Phone, Mail, MapPin, Menu, X, Activity, Clock, MessageCircle } from 'lucide-react';
 import './styles.css';
 
 
 const ChristusMuguerzaLanding = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const  [showChat, setShowChat] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -273,17 +274,41 @@ const ChristusMuguerzaLanding = () => {
           </div>
         </div>
       </footer>
-      <iframe
+
+      {!showChat && (
+        <button
+          className="sn-va-chat-btn"
+          onClick={() => setShowChat(true)}
+          arial-label="Abrir VA"
+          >
+            <MessageCircle size={28} className="sn-va-chat-icon" />
+          </button>
+      )}
+
+      {showChat && (
+        <div className="sn-va-widget-container">
+          <button
+          className="sn-va-chat-btn"
+          onClick={() => setShowChat(false)}
+          arial-label="Cerrar VA"
+          >
+            <X size={28} className="sn-va-chat-icon" />
+          </button>
+
+        <iframe
         id="sn_va_web_client"
         title="ServiceNow Virtual Agent Client"
-        width="320"
-        height="420"
+        width="400"
+        height="600"
         src="https://informationtechnologymatterssadecvdemo3.service-now.com/sn_va_web_client_app_embed.do"
         frameBorder="0"
         className="sn-va-widget"
       >
         Tu navegador no soporta iframes.
       </iframe>
+      </div>
+      )}
+      
     </div>
   );
 };
