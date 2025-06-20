@@ -268,7 +268,7 @@ const ChristusMuguerzaLanding = () => {
                 </div>
               </div>
               <p className="footer-copyright">
-                CHRISTUS MUGUERZA
+                CHRISTUS MUGUERZA - Todos los derechos reservados
               </p>
             </div>
           </div>
@@ -279,34 +279,33 @@ const ChristusMuguerzaLanding = () => {
         <button
           className="sn-va-chat-btn"
           onClick={() => setShowChat(true)}
-          arial-label="Abrir VA"
-          >
-            <MessageCircle size={28} className="sn-va-chat-icon" />
-          </button>
+          aria-label="Abrir VA"
+        >
+          <MessageCircle size={28} className="sn-va-chat-icon" />
+        </button>
       )}
 
       {showChat && (
         <div className="sn-va-widget-container">
           <button
-          className="sn-va-chat-btn"
-          onClick={() => setShowChat(false)}
-          arial-label="Cerrar VA"
+            className="sn-va-close-btn"
+            onClick={() => setShowChat(false)}
+            aria-label="Cerrar VA"
           >
-            <X size={28} className="sn-va-chat-icon" />
+            <X size={20} className="sn-va-close-icon" />
           </button>
-
-        <iframe
-        id="sn_va_web_client"
-        title="ServiceNow Virtual Agent Client"
-        width="400"
-        height="600"
-        src="https://informationtechnologymatterssadecvdemo3.service-now.com/sn_va_web_client_app_embed.do"
-        frameBorder="0"
-        className="sn-va-widget"
-      >
-        Tu navegador no soporta iframes.
-      </iframe>
-      </div>
+          <iframe
+            id="sn_va_web_client"
+            title="ServiceNow Virtual Agent Client"
+            width="360"
+            height="520"
+            src="https://informationtechnologymatterssadecvdemo3.service-now.com/sn_va_web_client_app_embed.do"
+            frameBorder="0"
+            className="sn-va-widget"
+          >
+            Tu navegador no soporta iframes.
+          </iframe>
+        </div>
       )}
       
     </div>

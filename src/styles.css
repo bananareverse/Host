@@ -719,16 +719,43 @@
   right: -18px;
   width: 36px;
   height: 36px;
-  background: #fff;
-  color: #6c63ff;
+  background: #f3f3ff; 
+  color: #d2d2d4;
   border: 1px solid #eee;
   border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(116, 39, 39, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10001;
+  transition: background 0.2s;
 }
 .sn-va-widget-container .sn-va-chat-btn:hover {
-  background: #f3f3ff;
-} 
+  background: #e0e0fa;
+}
+.sn-va-close-btn {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 56px;
+  height: 56px;
+  background: #6c63ff;
+  color: #817fa2;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(108, 99, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10001;
+  transition: background 0.2s;
+}
+.sn-va-close-btn:hover {
+  background: #554fd8;
+}
+.sn-va-close-icon {
+  color: #ffffff;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+}
