@@ -297,8 +297,8 @@ const ChristusMuguerzaLanding = () => {
           <iframe
             id="sn_va_web_client"
             title="ServiceNow Virtual Agent Client"
-            width="360"
-            height="520"
+            width="460"
+            height="620"
             src="https://informationtechnologymatterssadecvdemo3.service-now.com/sn_va_web_client_app_embed.do"
             frameBorder="0"
             className="sn-va-widget"
