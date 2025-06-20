@@ -678,8 +678,8 @@
 }
 
 .sn-va-widget {
-  width: 320px !important;
-  height: 420px !important;
+  width: 380px !important;
+  height: 440px !important;
   box-shadow: 0 4px 16px rgba(0,0,0,0.2);
   border-radius: 12px;
   overflow: hidden;
