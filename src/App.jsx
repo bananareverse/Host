@@ -24,90 +24,74 @@ const ChristusMuguerzaLanding = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const services = [
+  //Los servicios que tienen
+    const services = [
     {
-      icon: <Heart style={{ color: '#7C3AED', width: '48px', height: '48px' }} />,
+      icon:<Heart style={{color: '#7C3AED', width: '50px', height: '50px'}} />,
       title: "Cardiología Avanzada",
-      description: "Diagnóstico y tratamiento de enfermedades cardiovasculares con tecnología de vanguardia y especialistas certificados."
+      description: "Atención especializada en enfermedades cardiovasculares con tecnología de vanguardia y personal altamente capacitado."
     },
     {
-      icon: <Activity style={{ color: '#7C3AED', width: '48px', height: '48px' }} />,
+      icon: <Activity style={{color: '#7C3AED', width: '50px', height: '50px'}} />,
       title: "Cirugía Robótica",
-      description: "Procedimientos mínimamente invasivos con robots quirúrgicos Da Vinci para mayor precisión y recuperación rápida."
+      description: "Procedimientos mínimamente invasivos utilizando la más avanzada tecnología robótica para mejores resultados."
     },
     {
-      icon: <Shield style={{ color: '#7C3AED', width: '48px', height: '48px' }} />,
+      icon: <Shield style={{color: '#7C3AED', width: '50px', height: '50px'}} />,
       title: "Medicina Preventiva",
-      description: "Check-ups ejecutivos y programas de prevención personalizados para detectar enfermedades tempranamente."
-    },
-    {
-      icon: <Brain style={{ color: '#7C3AED', width: '48px', height: '48px' }} />,
-      title: "Neurología",
-      description: "Atención especializada en enfermedades del sistema nervioso con equipos de neuroimagen avanzados."
-    },
-    {
-      icon: <Baby style={{ color: '#7C3AED', width: '48px', height: '48px' }} />,
-      title: "Pediatría",
-      description: "Cuidado médico integral para niños desde recién nacidos hasta adolescentes con especialistas certificados."
-    },
-    {
-      icon: <Eye style={{ color: '#7C3AED', width: '48px', height: '48px' }} />,
-      title: "Oftalmología",
-      description: "Cirugías oculares avanzadas incluyendo LASIK, cataratas y tratamientos de retina con tecnología láser."
+      description: "Programas integrales de prevención y detección temprana para mantener tu salud en óptimas condiciones."
     }
+    
   ];
 
+  //Estadisticas
   const stats = [
-    { number: "50+", label: "Años de Experiencia", icon: <Clock style={{ width: '24px', height: '24px' }} /> },
-    { number: "300+", label: "Médicos Especialistas", icon: <Users style={{ width: '24px', height: '24px' }} /> },
-    { number: "15", label: "Hospitales y Clínicas", icon: <MapPin style={{ width: '24px', height: '24px' }} /> },
-    { number: "24/7", label: "Atención de Urgencias", icon: <Activity style={{ width: '24px', height: '24px' }} /> }
+    { number: "+6000", label: "Médicos especialistas al cuidado de tu salud y el de tu familia.", icon: <Clock style={{width:'24px', height:'24px'}}/> },
+    { number: "+300", label: "Especialidades y tratamientos para brindarte un servicio integral de calidad.", icon: <Users style={{width:'24px', height:'24px'}}/> },
+    { number: "+25", label: "Hospitales, clínicas y centros a lo largo de la república mexicana." , icon: <MapPin style={{width:'24px', height:'24px'}}/> },
   ];
-
+  //Opiniones o noticias
   const testimonials = [
     {
-      name: "María González",
-      text: "Excelente atención médica. Los doctores son muy profesionales y las instalaciones están muy bien equipadas.",
-      rating: 5
+      name:"Una segunda oportunidad para Jaime",
+      text:"En noviembre de 2024, Jaime, de 30 años, vivió una experiencia que le cambió la…"
     },
     {
-      name: "Carlos Rodríguez",
-      text: "Mi familia y yo confiamos en CHRISTUS MUGUERZA. Siempre recibimos atención de calidad.",
-      rating: 5
+      name:"Neurocirugía, una esperanza en la vida de Mercedes",
+      text:"Durante casi dos años, Mercedes convivió con un dolor de cabeza persistente, sobre todo durante…"
     },
     {
-      name: "Ana López",
-      text: "La tecnología que manejan es impresionante. Me operaron con robot y la recuperación fue muy rápida.",
-      rating: 5
+      name:"Un sueño cumplido para Gerardo",
+      text:"Desde pequeño, Gerardo era un niño activo; disfrutaba correr, jugar fútbol y hacer atletismo. Vivía…"
     }
   ];
-
+  // Lo que dice y las fotos del carusel
   const bannerSlides = [
     {
+      title: "Tu salud. Tu vida. Nuestro proposito",
+      image: "https://cdn.milenio.com/uploads/media/2023/11/29/instalaciones-cuentan-servicio-transfusion-sangre.jpg"
+    },
+    {
       title: "Tecnología Médica de Vanguardia",
-      subtitle: "Equipos de última generación para diagnósticos precisos",
       image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
     },
     {
       title: "Especialistas Certificados",
-      subtitle: "Médicos con reconocimiento internacional",
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
-    },
-    {
-      title: "Atención Integral",
-      subtitle: "Cuidamos tu salud en cada etapa de la vida",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
     }
+
   ];
 
-  return (
-    <div style={{ minHeight: '100vh', backgroundColor: 'white' }}>
-      {/* Barra Superior */}
+
+   return (
+    <div style={{minHeight: '100vh', backgroundColor: 'white'}}>
+      //Header primero
       <div style={{
         backgroundColor: '#7C3AED',
-        color: 'white',
         padding: '8px 0',
-        fontSize: '14px'
+        color: 'white',
+        fontSize: '14px',
+        justifyContent: 'center',
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -117,14 +101,28 @@ const ChristusMuguerzaLanding = () => {
           justifyContent: 'space-between',
           alignItems: 'center'
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-            <span>📞 81 8888 0000</span>
-            <span>✉️ info@christusmuguerza.com.mx</span>
+          <div style={{display: 'flex', alignItems: 'center', gap:'20px'}}>
+            <span>RENUEVA O ADQUIERE TU MEMBRESÍA, OBTÉN BENEFICIOS PARA TU SALUD, ¡ES GRATIS! QUIERO SER SOCIO CHRISTUS</span> 
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-            <a href="#" style={{ color: 'white', textDecoration: 'none' }}>Pacientes</a>
-            <a href="#" style={{ color: 'white', textDecoration: 'none' }}>Médicos</a>
-            <a href="#" style={{ color: 'white', textDecoration: 'none' }}>Trabaja con nosotros</a>
+        </div>
+      </div>
+      // Header segundo
+      <div style={{
+        backgroundColor: 'white',
+        padding: '8px 0',
+        color: 'black',
+        fontSize: '14px',
+      }}>
+        <div style={{
+          maxWidth: '1200px',
+          margin: '0 auto',
+          padding: '0 20px',
+          display: 'flex',
+          justifyContent: 'flex-end'
+        }}>
+          <div style={{ display: 'flex', gap: '20px' }}>
+            <span>Integridad y Ética</span>
+            <span>Accesos directos</span>
           </div>
         </div>
       </div>
