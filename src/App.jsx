@@ -844,7 +844,7 @@ const ChristusMuguerzaLanding = () => {
             title="ServiceNow Virtual Agent Client"
             width="460"
             height="620"
-            src="https://informationtechnologymatterssadecvdemo2.service-now.com"
+            src="https://informationtechnologymatterssadecvdemo2.service-now.com/sn_va_web_client_app_embed.do"
             frameBorder="0"
             className="sn-va-widget"
           >
