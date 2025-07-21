@@ -839,17 +839,16 @@ const ChristusMuguerzaLanding = () => {
           >
             <X size={20} className="sn-va-close-icon" />
           </button>
-          <iframe
-            id="sn_va_web_client"
-            title="ServiceNow Virtual Agent Client"
-            width="460"
-            height="620"
-            src="https://informationtechnologymatterssadecvdemo2.service-now.com/sn_va_web_client_app_embed.do"
-            frameBorder="0"
-            className="sn-va-widget"
-          >
-            Tu navegador no soporta iframes.
-          </iframe>
+        
+          <iframe 
+          id="sn_va_web_client"
+          title="ServiceNow Virtual Agent Client"
+          width="400"
+          height="600"
+          src="https://informationtechnologymatterssadecvdemo2.service-now.com/sn_va_web_client_app_embed.do"
+          frameborder="0">
+          Tu navegador no soporta iframes.
+</iframe>
         </div>
       )}
 
